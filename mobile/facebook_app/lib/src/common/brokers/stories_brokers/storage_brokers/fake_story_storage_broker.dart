@@ -1,12 +1,7 @@
+import 'dart:async';
 import 'package:facebook_app/src/common/common.dart';
 
 class FakeStoryStorageBroker implements IStoryStorageBroker {
-  @override
-  Future<bool> addAllStories(List<StoryModel> stories) async {
-    await _delayedSeconds(2);
-    return true;
-  }
-
   @override
   Future<List<StoryModel>> selectAllStories() async {
     await _delayedSeconds(2);
