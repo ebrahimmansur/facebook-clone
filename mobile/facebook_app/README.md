@@ -1,6 +1,6 @@
 # facebook_app
 
-A Facebook clone app project to diaply my thought process on how to build an app following clean and scoped approach.
+A Facebook clone app project to display my thought process on how to build an app following clean and scoped approach.
 
 ## Getting Started
 
