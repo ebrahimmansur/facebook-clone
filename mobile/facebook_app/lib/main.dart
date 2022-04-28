@@ -1,3 +1,4 @@
+import 'package:facebook_app/src/common/common.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -95,8 +96,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Image.asset(
+              AppImages.storyImage1,
             ),
             Text(
               '$_counter',

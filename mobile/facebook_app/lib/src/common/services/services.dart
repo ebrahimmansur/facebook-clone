@@ -1,1 +1,1 @@
-export 'stories_services/stories_services.dart';
+export 'stories_services/i_story_storage_service.dart';
