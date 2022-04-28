@@ -1,5 +1,5 @@
 name: facebook_app
-description: A Facebook clone app project to diaply my thought process on how to build an app following clean and scoped approach.
+description: A Facebook clone app project to display my thought process on how to build an app following clean and scoped approach.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
