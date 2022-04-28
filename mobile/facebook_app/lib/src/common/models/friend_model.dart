@@ -1,6 +1,6 @@
-import '../commons.dart';
+import '../common.dart';
 
-class FriendModel extends BaseModel {
+class FriendModel extends BaseModel<FriendModel> {
   final String firstName;
   final String lastName;
   final String profileImageUrl;
@@ -15,4 +15,12 @@ class FriendModel extends BaseModel {
 
   @override
   String get modelType => "FriendModel";
+
+  @override
+  get clone => FriendModel(
+      id: id,
+      firstName: firstName,
+      lastName: lastName,
+      profileImageUrl: profileImageUrl,
+      isOnline: isOnline);
 }

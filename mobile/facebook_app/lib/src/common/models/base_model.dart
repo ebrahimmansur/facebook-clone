@@ -1,4 +1,4 @@
-abstract class BaseModel {
+abstract class BaseModel<TModel> {
   final int id;
   const BaseModel({required this.id});
 
@@ -9,6 +9,8 @@ abstract class BaseModel {
   bool operator ==(Object other) {
     return hashCode == other.hashCode;
   }
+
+  TModel get clone;
 
   @override
   int get hashCode => id.hashCode;

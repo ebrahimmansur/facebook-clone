@@ -1,6 +1,6 @@
-import '../commons.dart';
+import '../common.dart';
 
-class StoryModel extends BaseModel {
+class StoryModel extends BaseModel<StoryModel> {
   final FriendModel friend;
   final bool isImage;
   final String contentUrl;
@@ -15,4 +15,12 @@ class StoryModel extends BaseModel {
 
   @override
   String get modelType => "StoryModel";
+
+  @override
+  get clone => StoryModel(
+      id: id,
+      friend: friend.clone,
+      isImage: isImage,
+      contentUrl: contentUrl,
+      isViewd: isViewd);
 }

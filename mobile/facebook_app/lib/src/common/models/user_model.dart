@@ -1,6 +1,6 @@
-import '../commons.dart';
+import '../common.dart';
 
-class UserModel extends BaseModel {
+class UserModel extends BaseModel<UserModel> {
   final String firstName;
   final String lastName;
   final String profileImageUrl;
@@ -13,4 +13,11 @@ class UserModel extends BaseModel {
 
   @override
   String get modelType => "UserModel";
+
+  @override
+  UserModel get clone => UserModel(
+      id: id,
+      firstName: firstName,
+      lastName: lastName,
+      profileImageUrl: profileImageUrl);
 }
