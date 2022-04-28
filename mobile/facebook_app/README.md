@@ -1,6 +1,6 @@
 # facebook_app
 
-A new Flutter project.
+A Facebook clone app project to diaply my thought process on how to build an app following clean and scoped approach.
 
 ## Getting Started
 
