@@ -3,6 +3,8 @@ class ResultWrapper<TLeft, TRight> {
   late TRight _rightType;
   final bool _isLeftType;
 
+  ResultWrapper._();
+  
   ResultWrapper.left(TLeft type) : _isLeftType = true;
   ResultWrapper.right(TRight type) : _isLeftType = false;
 
